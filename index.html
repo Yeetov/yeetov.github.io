@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoxStorm1 - About Me</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            background-color: #2c2f33; /* Discord dark theme background color */
-            color: #ffffff; /* Text color */
-        }
-        h1, h2 {
-            color: #7289da; /* Discord theme color */
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.5;
-        }
-        footer {
-            color: #99aab5; /* Footer text color */
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        a {
-            color: #7289da; /* Link color */
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron | About Me</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #e60012, #db5d2d);
+    }
+
+    #aliases {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .alias {
+      text-align: center;
+      margin: 0 20px;
+      opacity: 0; /* Initially hidden */
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    .alias:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .avatar {
+      width: 100px; /* Adjust the size as needed */
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    #known-by {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <section id="about">
-        <h1>FoxStorm1</h1>
-        <h2>About Me</h2>
-        <p>
-            Hey there! I'm Aaron, but you can call me FoxStorm1. I'm a laid-back [Your Profession/Field]
-            cruising through the digital world. My passion? Well, it's all about [Your Interests on Discord].
-        </p>
-    </section>
+  <div id="header">
+    <h1>Aaron's Portfolio</h1>
+  </div>
 
-    <section id="experience">
-        <h2>Current Vibes</h2>
-        <p>
-            Currently chilling at [Current Discord Server/Community], sharing laughs and gaming moments.
-            Drop by and let's vibe together!
-        </p>
-    </section>
+  <div id="aliases">
+    <!-- Aarontendo -->
+    <div class="alias">
+      <img src="https://i.ibb.co/wKGN3H7/image-2024-01-18-121831147.png" alt="Aarontendo Avatar" class="avatar">
+      <h2 style="color: #e60012;">Aarontendo</h2>
+    </div>
+    
+    <!-- FoxStorm1 -->
+    <div class="alias">
+      <img src="https://i.ibb.co/qFb5TXy/image-2024-01-18-122128955.png" alt="FoxStorm1 Avatar" class="avatar">
+      <h2 style="color: #db5d2d;">FoxStorm1</h2>
+    </div>
+  </div>
 
-    <footer>
-        <p>Let's Connect:</p>
-        <ul>
-            <li>Discord: FoxStorm1</li>
-            <li>GitHub: <a href="https://github.com/Yeetov" target="_blank">Yeetov</a></li>
-        </ul>
-    </footer>
+  <div id="known-by">
+    <p>Known by these aliases</p>
+  </div>
+
+  <!-- Add more sections for your portfolio content -->
 
 </body>
 </html>
