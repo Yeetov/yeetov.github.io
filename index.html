@@ -61,6 +61,30 @@
       text-align: center;
       padding: 20px;
     }
+
+    /* Updated Projects Section */
+    #projects {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .project {
+      background-color: #555;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards, slideInFromRight 1s ease-in-out forwards;
+    }
+
+    @keyframes slideInFromRight {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -85,9 +109,21 @@
     </div>
   </div>
 
-  <!-- Known By Section -->
-  <div id="known-by">
-    <p>Known by these aliases</p>
+
+  <!-- Updated Projects Section -->
+  <div id="projects">
+    <h2>Projects</h2>
+    <!-- UserPFP -->
+    <div class="project">
+      <h3><a href="https://github.com/UserPFP/UserPFP" target="_blank">UserPFP</a></h3>
+      <p>Animated profile pictures without  Discord Nitro.</p>
+    </div>
+
+    <!-- Equicord -->
+    <div class="project">
+      <h3><a href="https://github.com/Equicord/Equicord" target="_blank">Equicord</a></h3>
+      <p>The best Discord client mod.</p>
+    </div>
   </div>
 
   <!-- Add more sections for your portfolio content -->
