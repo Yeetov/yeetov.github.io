@@ -14,12 +14,14 @@
       box-sizing: border-box;
     }
 
+    /* Header Section Styles */
     #header {
       text-align: center;
       padding: 20px;
       background: linear-gradient(to right, #e60012, #db5d2d);
     }
 
+    /* Aliases Section Styles */
     #aliases {
       display: flex;
       justify-content: center;
@@ -39,6 +41,7 @@
       transform: scale(1.2);
     }
 
+    /* Animation Styles */
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -57,7 +60,7 @@
       margin-bottom: 10px;
     }
 
-    /* Updated Projects Section */
+    /* Projects Section Styles */
     #projects {
       text-align: center;
       padding: 40px;
@@ -77,6 +80,7 @@
       text-decoration: none;
     }
 
+    /* Animation Styles */
     @keyframes slideInFromRight {
       from {
         transform: translateX(100%);
@@ -86,7 +90,7 @@
       }
     }
 
-    /* Updated Platforms Section */
+    /* Platforms Section Styles */
     #platforms {
       text-align: center;
       padding: 40px;
@@ -97,6 +101,11 @@
 
     .platform {
       margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .platform:hover {
+      transform: scale(1.2);
     }
 
     .platform img {
@@ -127,7 +136,7 @@
     </div>
   </div>
 
-  <!-- Updated Projects Section -->
+  <!-- Projects Section -->
   <div id="projects">
     <h2>Projects</h2>
     <!-- UserPFP -->
@@ -143,7 +152,7 @@
     </div>
   </div>
 
-  <!-- Updated Platforms Section -->
+  <!-- Platforms Section -->
   <div id="platforms">
 
     <!-- Discord -->
@@ -157,6 +166,7 @@
     <div class="platform">
       <a href="https://gbatemp.net/members/foxstorm1.683074/" target="_blank">
         <img src="https://i.ibb.co/2FH2Ndc/image-2024-01-18-152959923.png" alt="GBATemp Icon">
+      </a>
     </div>
 
     <!-- GameBanana -->
