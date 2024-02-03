@@ -21,6 +21,8 @@
       text-align: center;
       padding: 20px;
       background: linear-gradient(to right, #e60012, #db5d2d);
+      border-bottom: 2px solid white; /* Added border for separation */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
     }
 
     /* Aliases Section Styles */
@@ -36,11 +38,14 @@
       margin: 0 20px;
       opacity: 0; /* Initially hidden */
       animation: fadeIn 1s ease-in-out forwards;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added background transition */
+      border: 2px solid #e60012; /* Added border for clarity */
+      padding: 10px; /* Added padding for spacing */
     }
 
     .alias:hover {
       transform: scale(1.2);
+      background-color: #333; /* Darker background on hover */
     }
 
     /* Animation Styles */
@@ -103,11 +108,14 @@
 
     .platform {
       margin: 20px;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Added border transition */
+      border: 2px solid white; /* Added border for clarity */
+      padding: 10px; /* Added padding for spacing */
     }
 
     .platform:hover {
       transform: scale(1.2);
+      border-color: #e60012; /* Change border color on hover */
     }
 
     .platform img {
