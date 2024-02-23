@@ -6,7 +6,6 @@
   <title>Aaron | About Me</title>
   <link rel="icon" href="https://i.ibb.co/kx1d7w1/image-2024-01-26-165424484.png" type="image/png">
   <style>
-    /* Your existing styles remain unchanged */
     body {
       background-color: black;
       color: white;
@@ -14,20 +13,18 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      max-width: 100%; /* Prevent content from extending beyond viewport */
-      overflow-x: hidden; /* Hide horizontal scrollbar */
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
-    /* Header Section Styles */
     #header {
       text-align: center;
       padding: 20px;
       background: linear-gradient(to right, #e60012, #db5d2d);
-      border-bottom: 2px solid white; /* Added border for separation */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+      border-bottom: 2px solid white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    /* Aliases Section Styles */
     #aliases {
       display: flex;
       justify-content: center;
@@ -38,19 +35,18 @@
     .alias {
       text-align: center;
       margin: 0 20px;
-      opacity: 0; /* Initially hidden */
+      opacity: 0;
       animation: fadeIn 1s ease-in-out forwards;
-      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added background transition */
-      border: 2px solid #e60012; /* Added border for clarity */
-      padding: 10px; /* Added padding for spacing */
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      border: 2px solid #e60012;
+      padding: 10px;
     }
 
     .alias:hover {
       transform: scale(1.2);
-      background-color: #333; /* Darker background on hover */
+      background-color: #333;
     }
 
-    /* Animation Styles */
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -63,43 +59,29 @@
     }
 
     .avatar {
-      width: 100px; /* Adjust the size as needed */
+      width: 100px;
       height: 100px;
       border-radius: 50%;
       margin-bottom: 10px;
     }
 
-    /* Projects Section Styles */
     #projects {
       text-align: center;
       padding: 40px;
     }
 
     .project {
-    background-color: #555;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    opacity: 0;
+      background-color: #555;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
     }
 
-
     .project a {
-      color: #80c7e0; /* Updated link color */
+      color: #80c7e0;
       text-decoration: none;
     }
 
-    /* Animation Styles */
-    @keyframes slideInFromRight {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-
-    /* Platforms Section Styles */
     #platforms {
       text-align: center;
       padding: 40px;
@@ -110,22 +92,21 @@
 
     .platform {
       margin: 20px;
-      transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Added border transition */
-      border: 2px solid white; /* Added border for clarity */
-      padding: 10px; /* Added padding for spacing */
+      transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+      border: 2px solid white;
+      padding: 10px;
     }
 
     .platform:hover {
       transform: scale(1.2);
-      border-color: #e60012; /* Change border color on hover */
+      border-color: #e60012;
     }
 
     .platform img {
-      width: 50px; /* Adjust the size as needed */
+      width: 50px;
       height: 50px;
     }
 
-    /* Footer Section */
     #footer {
       text-align: center;
       background-color: #333;
@@ -136,66 +117,53 @@
 </head>
 <body>
 
-  <!-- Header Section -->
   <div id="header">
     <h1>Aaron's Portfolio</h1>
   </div>
 
-  <!-- Aliases Section -->
   <div id="aliases">
-    <!-- Aarontendo -->
     <div class="alias">
       <img src="https://i.ibb.co/wKGN3H7/image-2024-01-18-121831147.png" alt="Aarontendo Avatar" class="avatar">
       <h2 style="color: #e60012;">Aarontendo</h2>
     </div>
     
-    <!-- FoxStorm1 -->
     <div class="alias">
       <img src="https://raw.githubusercontent.com/UserPFP/img/main/Avatars/7/789872551731527690.gif" alt="FoxStorm1 Avatar" class="avatar">
       <h2 style="color: #db5d2d;">FoxStorm1</h2>
     </div>
   </div>
 
-  <!-- Projects Section -->
   <div id="projects">
     <h2>Projects</h2>
-    <!-- UserPFP -->
     <div class="project">
       <h3><a href="https://github.com/UserPFP/UserPFP" target="_blank">UserPFP</a></h3>
       <p>Animated profile pictures without Discord Nitro.</p>
     </div>
 
-    <!-- Equicord -->
     <div class="project">
       <h3><a href="https://github.com/Equicord/Equicord" target="_blank">Equicord</a></h3>
       <p>The best Discord client mod.</p>
     </div>
 
-    <!-- PlayGalaxy -->
     <div class="project">
       <h3><a href="https://playgalaxy.github.io/website/" target="_blank">PlayGalaxy</a></h3>
       <p>Your Gaming Universe.</p>
     </div>
   </div>
 
-  <!-- Platforms Section -->
   <div id="platforms">
-
-    <!-- Discord -->
     <div class="platform">
       <a href="https://discord.com/users/789872551731527690" target="_blank">
         <img src="https://i.ibb.co/vYNv5fN/image-2024-01-18-155715991.png" alt="Discord Icon">
       </a>
     </div>
 
-    <!-- GBATemp -->
     <div class="platform">
       <a href="https://gbatemp.net/members/foxstorm1.683074/" target="_blank">
         <img src="https://i.ibb.co/2FH2Ndc/image-2024-01-18-152959923.png" alt="GBATemp Icon">
       </a>
     </div>
 
-    <!-- GameBanana -->
     <div class="platform">
       <a href="https://gamebanana.com/members/2292370" target="_blank">
         <img src="https://i.ibb.co/4Ycdtjt/image-2024-01-18-153034560.png" alt="GameBanana Icon">
@@ -203,11 +171,9 @@
     </div>
   </div>
 
-<!-- Footer Section -->
-<div id="footer" style="text-align: center; background-color: #333; color: white; padding: 10px;">
-  <p>MIT License 2024 | Copying not allowed, only modifications with improvements through forking and pull requests</p>
-</div>
-
+  <div id="footer">
+    <p>MIT License 2024 | Copying not allowed, only modifications with improvements through forking and pull requests</p>
+  </div>
 
 </body>
 </html>
