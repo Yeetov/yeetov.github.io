@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aaron | About Me</title>
   <link rel="icon" href="https://i.ibb.co/kx1d7w1/image-2024-01-26-165424484.png" type="image/png">
+  <link id="stylesheet" rel="stylesheet" href="professional.css">
   <style>
     body {
-      background-color: black;
-      color: white;
+      background-color: #111; /* Dark background color */
+      color: #eee; /* Light text color */
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -30,6 +31,19 @@
       justify-content: center;
       align-items: center;
       padding: 40px;
+      position: relative;
+      background-image: url("https://i.ibb.co/QdLbNS7/frame-47-delay-0-05s.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     }
 
     .alias {
@@ -40,21 +54,23 @@
       transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
       border: 2px solid #e60012;
       padding: 10px;
+      position: relative;
+      z-index: 1;
     }
 
     .alias:hover {
-      transform: scale(1.2);
-      background-color: #333;
+      transform: scale(1.05);
+      background-color: #222; /* Darker background color on hover */
     }
 
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: scale(0.8);
+        transform: translateY(-20px);
       }
       to {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0);
       }
     }
 
@@ -71,15 +87,30 @@
     }
 
     .project {
-      background-color: #555;
+      background-color: #333; /* Dark background color for projects */
       padding: 20px;
       margin: 10px;
       border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #e60012, #db5d2d);
+      opacity: 0.5;
+      z-index: -1;
     }
 
     .project a {
-      color: #80c7e0;
+      color: #fff; /* White text color for project links */
       text-decoration: none;
+      z-index: 1;
     }
 
     #platforms {
@@ -98,8 +129,8 @@
     }
 
     .platform:hover {
-      transform: scale(1.2);
-      border-color: #e60012;
+      transform: scale(1.1);
+      border-color: #e60012; /* Red border color on hover for platforms */
     }
 
     .platform img {
@@ -109,7 +140,7 @@
 
     #footer {
       text-align: center;
-      background-color: #333;
+      background-color: #222; /* Darker background color for footer */
       color: white;
       padding: 10px;
     }
@@ -122,6 +153,7 @@
   </div>
 
   <div id="aliases">
+    <div id="background-overlay"></div>
     <div class="alias">
       <img src="https://i.ibb.co/wKGN3H7/image-2024-01-18-121831147.png" alt="Aarontendo Avatar" class="avatar">
       <h2 style="color: #e60012;">Aarontendo</h2>
@@ -172,7 +204,7 @@
   </div>
 
   <div id="footer">
-    <p>MIT License 2024 | Copying not allowed, only modifications with improvements through forking and pull requests</p>
+    <p>MIT License 2024 | Copying not allowed, only modifications with improvements through forking and pull requests on Github</p>
   </div>
 
 </body>
